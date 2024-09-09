@@ -40,6 +40,21 @@ const Contact = () => {
     window.location.href = 'https://www.facebook.com/cogebimmobiliere.com.tn/?locale=fr_FR';
   };
 
+
+  const handleWhatsAppClick = () => {
+    window.location.href = 'https://wa.me/21698751725'; 
+  };
+
+  const handleFacebookClick = () => {
+    window.location.href = 'https://www.facebook.com/profile.php?id=100067771234549&mibextid=ZbWKwL';
+  };
+  const handleInstagramClick = () => {
+    window.location.href = 'https://www.instagram.com/cogeb_immobiliere?igsh=MW9ub3kzbmE1ZXRoNw==';
+  };
+  
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+21698751724'; 
+  };
   return (
     <div className="Contact container section" id="contact">
       <div className="secContainer flex">
@@ -80,44 +95,39 @@ const Contact = () => {
           <div className="secContent grid" data-aos="fade-right">
             <div data-aos="fade-up" className="phone">
               <div className="info flex">
-                <BiSolidPhoneCall className="icon" />
+                <TbDeviceLandlinePhone className="icon" />
                 <span>
-                  <h4>Téléphone</h4>
-                  <p>+216 73 225 471</p>
+                  <p style={{ fontSize: '1rem' }}>+216 73 225 471</p>
                 </span>
               </div>
-              {/* <button>Appeler</button> */}
             </div>
-            <div data-aos="fade-up" className="chat">
+            <div data-aos="fade-up" className="chat"  onClick={handleWhatsAppClick} style={{ cursor: 'pointer' }} >
               <div className="info flex">
                 <RiWhatsappFill className="icon" />
                 <span>
-                  <h4>WhatsApp</h4>
-                  <p>+216 98 751 750</p>
+                  <p style={{ fontSize: '1rem' }}>+216 98 751 725</p>
                 </span>
               </div>
-              {/* <button>Message</button> */}
             </div>
-            <div data-aos="fade-up" className="videoCall">
+            <div data-aos="fade-up" className="videoCall" onClick={handleFacebookClick} style={{ cursor: 'pointer' }}>
               <div className="info flex">
                 <FaFacebook className="icon" />
                 <span>
-                  <h4>Facebook</h4>
-                  <p>24/7 Support</p>
+                  <p style={{ fontSize: '1rem' }}> 24/7 Support</p>
                 </span>
               </div>
-              {/* <button onClick={handleContactClick}>Contacter</button> */}
             </div>
-            <div data-aos="fade-up" className="message">
+
+            <div data-aos="fade-up" className="message" onClick={handlePhoneClick} style={{ cursor: 'pointer' }} >
               <div className="info flex">
-                <TbDeviceLandlinePhone className="icon" />
+                <BiSolidPhoneCall  className="icon"  />
                 <span>
-                  <h4>Fixe</h4>
-                  <p>24/7 Support</p>
+                  <p style={{ fontSize: '1rem' }}>+216 98 751 724</p>
                 </span>
               </div>
-              {/* <button>Appeler</button> */}
             </div>
+         
+          
           </div>
         </div>
       </div>

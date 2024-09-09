@@ -59,7 +59,8 @@
   display: grid;
   border-radius: 20px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2rem 1rem;
+  
+  padding-left: 1rem;
   background-image: linear-gradient(to bottom, rgba(124, 123, 226, 0.3098039216), rgba(0, 111, 173, 0.368627451), rgba(0, 82, 95, 0.431372549), rgba(0, 148, 189, 0.5215686275), rgba(12, 15, 7, 0.5490196078));
 }
 .about .secContainer .videoCard .cardContent .cardText h2 {
@@ -68,15 +69,15 @@
   padding-bottom: 1rem;
 }
 .about .secContainer .videoCard .cardContent .cardText p {
-  color: var(--whiteColor);
+   color: aliceblue;
   
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 .about .secContainer .videoCard .cardVideo {
   border: 2px solid var(--whiteColor);
-  height: 270px;
+  height: 320px;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -87,6 +88,15 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .about .secContainer .videoCard .cardContent {
+  gap: 2rem;
+  display: grid;
+  border-radius: 20px;
+  grid-template-columns: repeat(1, 1fr);}
+}
+
 
 @media screen and (min-width: 720px) {
   .about .secContent .videoCard .cardContent {

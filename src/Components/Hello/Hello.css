@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+@font-face {
+  font-family: 'Deutschlands';
+  src: url('/src/Assets/fonts/Deutschlands.ttf') format('truetype');
+}
+
 :root {
   --primaryColor: hsl(228, 66%, 53%);
   --primaryColorLight: hsl(223, 100%, 97%);
@@ -33,7 +37,7 @@
 
 .Hello .secContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row !important;
   align-items: center;
   text-align: center;
 }
@@ -43,12 +47,15 @@
   flex-direction: column;
   align-items: center;
   padding-left: 2rem;
+  font-family: 'Deutschlands', cursive;
 }
 
 .Hello .secContainer .textDiv h1 {
   color: aliceblue;
-  font-size: var(--biggestFontSize);
-  font-family: "'Playfair Display', serif";
+  font-size: 5rem !important;
+  font-family: 'Deutschlands', cursive;
+  font-weight: 400;
+  line-height: 8rem;
 }
 
 .Hello .secContainer .textDiv .design {
@@ -67,46 +74,69 @@
   align-items: center;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 425px) {
   .Hello {
-    height: 80vw; /* Ajustez la hauteur pour les très petits écrans */
+    height: 100vw; /* Ajustez la hauteur pour les très petits écrans */
   }
   .Hello .secContainer .textDiv h1 {
-    font-size: 1.2rem; /* Taille de police réduite pour les très petits écrans */
+    font-size: 1rem !important; /* Taille de police réduite pour les très petits écrans */
   }
   .Hello .secContainer .textDiv p {
     font-size: 0.8rem;
     line-height: 1.2;
   }
+  
+  .Hello .secContainer .textDiv h1 {
+    color: aliceblue;
+    font-size: 2rem !important;
+    font-family: 'Deutschlands', cursive;
+    font-weight: 400;
+    line-height: 3rem;
+  }
 }
 
-@media screen and (min-width: 480px) and (max-width: 679px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .Hello {
-    height: 100vw; /* Ajustez la hauteur pour les petits écrans */
+    height: 80vw; /* Ajustez la hauteur pour les petits écrans */
   }
   .Hello .secContainer .textDiv h1 {
-    font-size: 1.6rem; /* Taille de police réduite pour les petits écrans */
+    font-size: 3rem; /* Taille de police réduite pour les petits écrans */
   }
   .Hello .secContainer .textDiv p {
     font-size: 1rem;
     line-height: 1.5;
   }
+  .Hello .secContainer .textDiv h1 {
+    color: aliceblue;
+    font-size: 4rem !important;
+    font-family: 'Deutschlands', cursive;
+    font-weight: 400;
+    line-height: 4rem;
+  }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .Hello {
-    height: 70vw; /* Ajustez la hauteur pour les écrans plus grands */
+    height: 90vw !important; /* Ajustez la hauteur pour les écrans plus grands */
   }
+
   .Hello .secContainer {
     flex-direction: row;
     text-align: left;
-    gap: 2rem;
+    gap: 1rem;
   }
   .Hello .secContainer .textDiv {
     align-items: flex-start;
   }
   .Hello .secContainer .imgDiv {
     flex-basis: 60%;
+  }
+  .Hello .secContainer .textDiv h1 {
+    color: aliceblue;
+    font-size: 4rem !important;
+    font-family: 'Deutschlands', cursive;
+    font-weight: 400;
+    line-height: 8rem;
   }
 }
 

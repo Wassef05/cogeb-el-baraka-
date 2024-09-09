@@ -53,11 +53,11 @@ const WhyCogeb = () => {
         <div  data-aos="fade-right" className="videoCard ">
             <div className="cardContent grid">
             <div className="cardText">
-    <h2>Opérations de Pressage des Olives</h2>
-    <p style={{ color: 'azure' }}>
-        Le pressage des olives consiste à sélectionner les meilleures olives, à les nettoyer, puis à les broyer pour en extraire l'huile. Cette méthode garantit une huile d'olive de haute qualité, conservant ses saveurs naturelles et ses bienfaits nutritionnels.
-    </p>
-</div>
+                <h2>Opérations de Pressage des Olives</h2>
+                <p style={{ color: 'azure' ,  textShadow: '2px 2px 4px white'}}>
+                    Le pressage des olives consiste à sélectionner les meilleures olives, à les nettoyer, puis à les broyer pour en extraire l'huile. Cette méthode garantit une huile d'olive de haute qualité, conservant ses saveurs naturelles et ses bienfaits nutritionnels.
+                </p>
+            </div>
 
                 <div className="cardVideo">
                     <video src={video3} autoPlay loop muted type="video/mp4"></video>

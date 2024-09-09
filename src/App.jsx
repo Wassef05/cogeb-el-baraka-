@@ -23,12 +23,10 @@ function App() {
       <Navbar/>
       <Hello/>
       <Hellothree/>
-      <ListingTwo/>
+      {/* <ListingTwo/> */}
       <WhyCogeb/>
-    
-       {/* <Popular/>  */}
-       {/* <Historique/> */}
-       <Listing/>
+   
+       {/* <Listing/> */}
    
     
       {/* <About/> */}

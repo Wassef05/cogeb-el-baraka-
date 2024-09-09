@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 const Hello = () => {
   const [text] = useTypewriter({
-    words: ["El-Baraka : De notre trésor local , Nous offrons le meilleur"],
+    words: ["Al-Baraka : De notre trésor local , Nous offrons le meilleur"],
     loop: true,
     typeSpeed: 80,
     deleteSpeed: 1,
@@ -27,16 +27,16 @@ const Hello = () => {
   }, []);
 
   return (
-    <div className="Hello" id='hero'>
+    <div className="Hello" id="hero">
       <div className="secContainer containerHR flex">
         <div className="textDiv">
           <h1 data-aos="fade-up">
-            <span className="baraka" style={{ fontFamily: "'Dancing Script', cursive", fontSize: "4rem" }}>{text}</span>
+            <span className="baraka" style={{ fontFamily: "Deutschlands" }}>{text}</span>
             <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="orange" />
           </h1>
           <span data-aos="fade-up" className="design"></span>
         </div>
-        <div data-aos="fade-up" className="imgDiv"></div>
+        <div data-aos="fade-up" className="imgDiv"> </div>
       </div>
     </div>
   );
