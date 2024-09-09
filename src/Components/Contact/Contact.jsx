@@ -3,9 +3,7 @@ import "./Contact.css";
 
 //
 import { BiSolidPhoneCall } from "react-icons/bi";
-import { AiFillMessage } from "react-icons/ai";
-import { BiSolidVideo } from "react-icons/bi";
-import { BiSolidMessageDetail } from "react-icons/bi";
+
 import { FaFacebook } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
@@ -18,18 +16,8 @@ import image2 from "../../Assets/Helo3.png"
 //
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 
-const mapContainerStyle = {
-  width: '100%',
-  height: '400px',
-};
-
-const center = {
-  lat: 35.574385221373845, // Make sure these coordinates are for the location you want
-  lng: 10.73509862446424,
-};
 
 const Contact = () => {
   useEffect(() => {
@@ -60,20 +48,7 @@ const Contact = () => {
       <div className="secContainer flex">
       <div className="card">
         <img src={contactimg}/>
-          {/* <h2 className="card-title">Où nous trouver ?</h2>
-          <p className="card-subtitle">SQZ toujours à votre service</p>
-          <div className="map-container">
-          <LoadScript googleMapsApiKey="AIzaSyAhOie6_knV7vthuc3QG2xOLa5RtN3ztuc">
-        <GoogleMap
-          mapContainerStyle={mapContainerStyle}
-          center={center}
-          zoom={15} 
-        >
-          <Marker position={center} />
-
-                        </GoogleMap>
-                                    </LoadScript>
-          </div> */}
+       
         </div>
 
 
