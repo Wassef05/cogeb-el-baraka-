@@ -2,10 +2,7 @@ import React, { useEffect } from "react";
 import "./Sponsors.css";
 
 
-import logo1 from '../../Assets/Logo1.png'
-import logo2 from '../../Assets/Logo1.png'
-import logo3 from '../../Assets/Logo1.png'
-import logo4 from '../../Assets/Logo1.png'
+
 
  //
 import Aos from "aos";

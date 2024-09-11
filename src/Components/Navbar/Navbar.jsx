@@ -5,9 +5,7 @@ import "./Navbar.css";
 import { SiTreehouse } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
-import image3 from "../../Assets/Plan de travail 12.png";
-import image2 from '../../Assets/Plan de travail 1.png'
-import image1 from '../../Assets/PLAN122.png'
+
 import image4 from '../../Assets/al baraka 1.png'
 // import image from "../../Assets/cogeb.png";
 
@@ -85,7 +83,8 @@ const Navbar = () => {
                 // border: '2px solid #C9961A' ,
                 border:'2px solid rgb(236,172,16)',
                 fontFamily: "'Playfair Display', serif",// Border color
-              }}>
+              }}
+              onClick={scrollToContact}>
                 Contact
               </button>
 

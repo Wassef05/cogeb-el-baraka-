@@ -65,7 +65,7 @@
     right: 50%;
     left: 50%;
     transform: translate(-50%);
-    background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+    background: linear-gradient(40deg, rgb(61, 146, 61), rgb(42, 198, 50));
     padding: 2rem;
     border-radius: var(--borderRadius);
     transition: 0.8s ease-in-out;
@@ -99,7 +99,7 @@
   right: 50%;
   left: 50%;
   transform: translate(-50%);
-  background: linear-gradient(40deg, rgb(114, 145, 255), rgb(42, 73, 198));
+  background: linear-gradient(40deg, rgb(57, 57, 58), rgb(24, 25, 26));
   padding: 10px;
   height: 50px;
   width: 50px;

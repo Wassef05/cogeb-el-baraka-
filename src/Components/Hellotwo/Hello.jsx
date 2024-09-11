@@ -3,9 +3,7 @@ import "./Hello.css";
 
 import { HiLocationMarker } from "react-icons/hi";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Image from "../../Assets/Hello Image.png";
-import Image2 from '../../Assets/tayma11.png'
-import Image3 from '../../Assets/Helo1.png'
+
 import ImageHero from '../../Assets/HELLO2.png'
 import ImageHero2 from '../../Assets/per.png'
 import ImageHero3 from '../../Assets/choisir2.png'

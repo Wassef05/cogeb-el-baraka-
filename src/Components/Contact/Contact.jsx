@@ -10,9 +10,9 @@ import { TbDeviceLandlinePhone } from "react-icons/tb";
 //
 
 import contactimg from '../../Assets/contactbaraka.png'
-import image from "../../Assets/Contact Image.png";
 
-import image2 from "../../Assets/Helo3.png"
+
+
 //
 import Aos from "aos";
 import "aos/dist/aos.css";

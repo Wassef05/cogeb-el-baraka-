@@ -1,77 +1,9 @@
 import React, { useEffect } from "react";
 import "./Listing.css";
-
-import { FaBed } from "react-icons/fa";
-import { MdTableRestaurant } from "react-icons/md";
-import { GiBedLamp } from "react-icons/gi";
-import { FaBath } from "react-icons/fa";
-import { GiOlive } from "react-icons/gi";
-import { FaBottleDroplet } from "react-icons/fa6";
-import { GiSpiralBottle } from "react-icons/gi";
-import { GiFruitTree } from "react-icons/gi";
-import { FaTreeCity } from "react-icons/fa6";
-import { GiWoodPile } from "react-icons/gi"
-import { GiWoodenPier } from "react-icons/gi";
-import { FaIndustry } from "react-icons/fa6";
-import { FaSink } from "react-icons/fa";
-import { FaToilet } from "react-icons/fa";
-import { FaBuildingColumns } from "react-icons/fa6";
-import { FaBuilding } from "react-icons/fa";
-import { GiFamilyHouse } from "react-icons/gi";
-import { BiSolidBuildingHouse } from "react-icons/bi"
-import { GiKitchenTap } from "react-icons/gi";
-import { BiSolidBath } from "react-icons/bi";
-
 import { FaOilCan, FaTree, FaLeaf, FaWineBottle } from 'react-icons/fa';
-// import image1 from "../../Assets/House (1).png";
-// import image1 from "../../Assets/doc2/IMGCOGEB1.jpg"
-import image1 from "../../Assets/bat25.jpg"
-// import image2 from "../../Assets/House (4).png";
-// import image2 from "../../Assets/doc3/IMG2.jpg";
-import image2 from "../../Assets/doc2/mok.jpg";
-// import image3 from "../../Assets/House (5).png";
-import image3 from "../../Assets/doc3/IMG3.jpg";
-// import image4 from "../../Assets/House (2).png";
-import image4 from "../../Assets/zit.jpg";
-// import image5 from "../../Assets/House (1).jpg";
-import image5 from "../../Assets/bat25.jpg";
-import image6 from "../../Assets/House (2).jpg";
-
-import image7 from "../../Assets/import.jpg"
-
-// import image11 from '../../Assets/sqz/peinture.jpg'
-// import image22 from '../../Assets/sqz/electrique.jpg'
-// import image33 from '../../Assets/sqz/porte.jpg'
-// import image44 from '../../Assets/sqz/jardin.jpg'
-// import image55 from '../../Assets/sqz/fixation.jpg'
-// import image66 from '../../Assets/sqz/construction.jpg'
-// import image77 from '../../Assets/sqz/polembrie.jpg'
-// import image88 from '../../Assets/sqz/manuel.jpg'
-// import image99 from '../../Assets/sqz/securite.jpg'
-
-
-import image11 from '../../Assets/cat1.png'
-import image22 from '../../Assets/cat2.png'
-import image33 from '../../Assets/cat3.png'
-import image44 from '../../Assets/cat9.png'
-import image55 from '../../Assets/cat4.png'
-import image66 from '../../Assets/cat5.png'
-import image77 from '../../Assets/cat6.png'
-import image88 from '../../Assets/cat7.png'
-import image99 from '../../Assets/cat8.png'
-
-
-import image111 from '../../Assets/liste1.jpg'
-import image222 from '../../Assets/liste2.jpg'
-import image333 from '../../Assets/liste3.jpg'
-import image444 from '../../Assets/liste4.jpg'
-import image555 from '../../Assets/liste5.jpg'
-import image666 from '../../Assets/liste6.jpg'
-import { AiOutlineSwapRight } from 'react-icons/ai';
-
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import image4 from "../../Assets/zit.jpg"
 const properties = [
   {
     id: 1,
