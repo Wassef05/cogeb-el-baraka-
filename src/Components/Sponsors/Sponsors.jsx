@@ -16,7 +16,7 @@ const Sponsors = () => {
   return (
     <div className="Sponsors" id="sponsor">
             <div data-aos="fade-up" className="sponsor-title" style={{ textAlign: 'center' }}>
-        {/* <h2 style={{ color: '#C9961A', fontSize: '1.5rem',marginBottom:'3rem',letterSpacing: '0.5em' }}>Nos Partenaires de Confiance</h2> */}
+     
 
         <h2 style={{ color:'#c9c2c2', fontSize: '1.1rem',marginBottom:'3rem',letterSpacing: '0.4em' , fontFamily: "'Playfair Display', serif",}}>Nos Partenaires de Confiance</h2>
       </div>

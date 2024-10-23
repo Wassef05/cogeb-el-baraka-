@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./NewHello.css";
-import med from "../../Assets/Group 42.png";
+
+import {med} from "../../Assets"
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -13,7 +14,7 @@ const NewHelloThree = () => {
     <div className="new-hellothree" id="hero">
       <div className="new-sec-container-three containerHR">
         <div className="new-img-div" data-aos="fade-up">
-          <img src={med} alt="medlazreg" className="new-image-style" />
+          <img src={med} alt="albaraka logo" className="new-image-style" />
         </div>
         <div className="new-text-div" data-aos="fade-up">
          

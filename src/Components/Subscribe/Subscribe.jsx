@@ -31,7 +31,7 @@ const Subscribe = () => {
         backgroundColor: '#cdc8c8', // Button background color
         border: '2px solid #C9961A'
       }}
-        // onClick={handleContactClick}
+     
         onClick={openModal}
         >
           S ' Abonner

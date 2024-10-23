@@ -9,7 +9,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 //
 
-import contactimg from '../../Assets/contactbaraka.png'
+import {contactbaraka} from '../../Assets'
 
 
 
@@ -47,7 +47,7 @@ const Contact = () => {
     <div className="Contact container section" id="contact">
       <div className="secContainer flex">
       <div className="card">
-        <img src={contactimg}/>
+        <img src={contactbaraka} alt="contact albarka"/>
        
         </div>
 

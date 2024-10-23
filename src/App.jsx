@@ -8,11 +8,11 @@ import Listing from "./Components/Listing/Listing";
 import Contact from "./Components/Contact/Contact";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Footer from "./Components/Footer/Footer";
-import Historique from './Components/Historique/Historique';
 
-import ListingTwo from './Components/ListingTwo/Listing';
 
-import Hellothree from './Components/Hellothree/Hello';
+import ListingTwo from './Components/ListingTwo/Listingtwo';
+
+import Hellothree from './Components/Hellothree/Hellothree';
 import WhyCogeb from './Components/WhyCogeb/WhyCogeb';
 
 function App() {
@@ -24,17 +24,10 @@ function App() {
       <Hellothree/>
       {/* <ListingTwo/> */}
       <WhyCogeb/>
-   
-       <Listing/>
-   
-    
-    
+       {/* <Listing/> */}
        <Contact/>
-       
-      
       <Subscribe/> 
       {/* <Sponsors/> */}
-
       <Footer/>
     </>
   )

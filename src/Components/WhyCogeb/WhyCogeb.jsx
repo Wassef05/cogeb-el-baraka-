@@ -20,35 +20,7 @@ const WhyCogeb = () => {
       <div className="secContainer">
      
 
-        {/* <div className="mainContent container grid">
-          <div data-aos="fade-right" className="singleItem">
-            <img src={img} alt="Image Name" />
-            <h3> 100+ Places </h3>
-
-            <p>
-              Reserch show that a chance to break away from the normal rythms of
-              daily life reduces stress and improves health and well-being
-            </p>
-          </div>
-
-          <div data-aos="fade-right" className="singleItem">
-            <img src={img2} alt="Image Name" />
-            <h3> 1000+ Mountains </h3>
-
-            <p>
-            Escaping daily routines for mountains reduces stress, improves well-being, and boosts health, as research suggests.
-            </p>
-          </div>
-
-          <div data-aos="fade-right" className="singleItem">
-            <img src={img3} alt="Image Name" />
-            <h3> 2000+ Clients </h3>
-
-            <p>
-            We are proud to serve over 1000 clients who choose to travel with us, trusting us with their unforgettable experiences
-            </p>
-          </div>
-        </div> */}
+      
         <div className="container">
         <div  data-aos="fade-right" className="videoCard ">
             <div className="cardContent grid">

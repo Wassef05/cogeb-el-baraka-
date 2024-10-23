@@ -29,30 +29,7 @@ const properties = [
     desc: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
     beds: 5,
   },
-  // {
-  //   id: 4,
-  //   image: image4,
-  //   name: "Cogeb one , Tunisia",
-  //   price: "24/24",
-  //   desc: "A company specializing in the sale of sanitary products",
-  //   beds: 7,
-  // },
-  // {
-  //   id: 5,
-  //   image: image4,
-  //   name: "Cogeb one , Tunisia",
-  //   price: "24/24",
-  //   desc: "A company specializing in the sale of sanitary products",
-  //   beds: 8,
-  // },
-  // {
-  //   id: 6,
-  //   image: image4,
-  //   name: "Historic Brownstone, Boston",
-  //   price: "24/24",
-  //   desc: "A company specializing in the sale of sanitary products",
-  //   beds: 6,
-  // },
+
 ];
 
 
@@ -85,22 +62,14 @@ const Listing = () => {
           </p>
           <div data-aos="fade-up" className="btns flex">
         
-              {/* <button className="btnn" style={{
-                color: '#C9961A', // Text color
-                backgroundColor: 'white', // Button background color
-                border: '2px solid #C9961A',
-                fontFamily: "'Playfair Display', serif",
-                marginBottom:'3rem'// Border color
-              }}>
-                Choisir vos désirs
-              </button> */}
+       
 
 
           </div>
         </div>
 
      <div className="secContent grid">
-          {/* Use Map array method */}
+       
           {properties.map(({ id, image, name, price, desc, beds }) => {
             return (
               <div key={id} className="singleListing">
@@ -109,11 +78,7 @@ const Listing = () => {
                 </div>
                 <div data-aos="fade-up" className="info">
                   <h2 className="name">{name}</h2>
-                  {/* <span className="price">
-                    <span className="digits">{price}</span>
-                    <span className="orangeText"> h</span>
-                    <span className="duration"> / 7 Days</span>
-                  </span> */}
+          
                   <p>{desc}</p>
                   <div className="ammenities flex">
   <span className="flex">
@@ -136,41 +101,7 @@ const Listing = () => {
               </div>
             );
           })}
-          {/* <div className="singleListing">
-            <div className="imgDiv">
-              <img src={image} alt="House Image" />
-            </div>
-            <div className="info">
-              <h2 className="name">Countryside Estate, Italy</h2>
-              <span className="price">
-                <span className="digits">34,223</span>
-                <span className="orangeText">USD</span>
-                <span className="duration">/Day</span>
-              </span>
-              <p>
-                A historic chateau in the Bordeaux wine region, featuring
-                vineyards.,
-              </p>
-              <div className="ammenities flex">
-                <span className="flex">
-                  <FaBed className="icon" />
-                  <blockquote>x5</blockquote>
-                </span>
-
-                <span className="flex">
-                  <MdPool className="icon" />
-                </span>
-
-                <span className="flex">
-                  <AiOutlineWifi className="icon" />
-                </span>
-
-                <span className="flex">
-                  <MdFastfood className="icon" />
-                </span>
-              </div>
-            </div>
-          </div> */}
+     
         </div>
       </div>
     </div>

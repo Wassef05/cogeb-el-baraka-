@@ -69,7 +69,7 @@ const Navbar = () => {
         <ul>
           <li className="navList" onClick={scrollToHero}>Acceuil</li>
           {/* <li className="navList">Services</li> */}
-          <li className="navList" onClick={scrollToGroup}>Catégorie</li>
+          {/* <li className="navList" onClick={scrollToGroup}>Catégorie</li> */}
           <li className="navList" onClick={scrollToAboutUs}>À Propos</li>
         </ul>
         {/* icon close navbar on small devices */}
@@ -77,12 +77,11 @@ const Navbar = () => {
       </div>
      
       <button className="btnn" style={{
-                color: 'rgb(255,181,1)', // Text color
+                color: 'rgb(255,181,1)',
                 background:"rgb(205 198 198 / 36%)",
-                // Button background color
-                // border: '2px solid #C9961A' ,
+           
                 border:'2px solid rgb(236,172,16)',
-                fontFamily: "'Playfair Display', serif",// Border color
+                fontFamily: "'Playfair Display', serif",
               }}
               onClick={scrollToContact}>
                 Contact
