@@ -207,3 +207,20 @@
     }
 }
 
+.languageSelector {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.languageSelector button {
+  background: none;
+  border: none;
+  color: var(--primaryColorDark);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.languageSelector button:hover {
+  color: var(--orangeColor);
+}

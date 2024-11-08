@@ -1,93 +1,79 @@
 import React, { useState } from "react";
-import "./Navbar.css";
-
- //
-import { SiTreehouse } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
-
-import image4 from '../../Assets/al baraka 1.png'
-// import image from "../../Assets/cogeb.png";
+import { FaGlobe } from "react-icons/fa";
+import image4 from '../../Assets/al baraka 1.png';
+import frenchFlag from '../../Assets/images.jpg';  // Import de l'image du drapeau français
+import englishFlag from '../../Assets/eng.jpg';    // Import de l'image du drapeau anglais
+import './Navbar.css';
 
 const Navbar = () => {
-  //function to show navbar
+  const { t, i18n } = useTranslation();
   const [menu, setMenu] = useState("menu");
-  const shownavbar = () => {
-    setMenu("showNavbar menu");
+  const [languageMenu, setLanguageMenu] = useState(false);
+
+  const toggleLanguageMenu = () => setLanguageMenu(!languageMenu);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setLanguageMenu(false);
   };
 
-  //function to remove navbar
-  const removenavbar = () => {
-    setMenu("menu");
-  };
+  const shownavbar = () => setMenu("showNavbar menu");
+  const removenavbar = () => setMenu("menu");
 
-  //function to add a background to the navbar on scroll
   const [transparent, setTransparent] = useState("Navbar");
   const addBG = () => {
-    if (window.scrollY >= 10) {
-      setTransparent("Navbar addBackground");
-     
-    } else {
-      setTransparent("Navbar");
-    }
+    setTransparent(window.scrollY >= 10 ? "Navbar addBackground" : "Navbar");
   };
   window.addEventListener("scroll", addBG);
 
-  const scrollToContact = () => {
-    const contactElement = document.getElementById("contact");
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToGroup = () => {
-    const groupElement = document.getElementById("group");
-    if (groupElement) {
-      groupElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToAboutUs = () => {
-    const aboutUsElement = document.getElementById("about");
-    if (aboutUsElement) {
-      aboutUsElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const scrollToHero = () => {
-    const aboutUsElement = document.getElementById("hero");
-    if (aboutUsElement) {
-      aboutUsElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
     <div className={transparent}>
       <div className="logoDiv">
-        {/* <SiTreehouse className="icon" /> */}
-        <img src={image4} className="logonav"/>
-        {/* <span>Cogeb</span> */}
+        <img src={image4} className="logonav" alt="Logo" />
       </div>
 
       <div className={menu}>
         <ul>
-          <li className="navList" onClick={scrollToHero}>Acceuil</li>
-          {/* <li className="navList">Services</li> */}
-          {/* <li className="navList" onClick={scrollToGroup}>Catégorie</li> */}
-          <li className="navList" onClick={scrollToAboutUs}>À Propos</li>
+          <li className="navList" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("navbar.home")}</li>
+          <li className="navList" onClick={() => window.scrollTo({ top: document.getElementById("about").offsetTop, behavior: 'smooth' })}>{t("navbar.about")}</li>
         </ul>
-        {/* icon close navbar on small devices */}
         <AiFillCloseCircle className="icon closeIcon" onClick={removenavbar} />
       </div>
-     
-      <button className="btnn" style={{
-                color: 'rgb(255,181,1)',
-                background:"rgb(205 198 198 / 36%)",
-           
-                border:'2px solid rgb(236,172,16)',
-                fontFamily: "'Playfair Display', serif",
-              }}
-              onClick={scrollToContact}>
-                Contact
-              </button>
 
-      {/* icon open/show navbar on small devices */}
+      <div className="rightSection">
+        <button
+          className="btnn"
+          style={{
+            color: 'rgb(255,181,1)',
+            background: "rgb(205 198 198 / 36%)",
+            border: '2px solid rgb(236,172,16)',
+            fontFamily: "'Playfair Display', serif",
+          }}
+          onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
+        >
+          {t("navbar.contact")}
+        </button>
+
+        {/* Sélecteur de langue */}
+        <div className="languageSelector">
+          <FaGlobe className="icon" onClick={toggleLanguageMenu} />
+          {languageMenu && (
+            <div className="languageDropdown">
+              <button onClick={() => changeLanguage("fr")}>
+                <img src={frenchFlag} alt="French Flag" className="flagIcon" style={{ width: '20px', marginRight: '8px' }} />
+                Fr
+              </button>
+              <button onClick={() => changeLanguage("en")}>
+                <img src={englishFlag} alt="English Flag" className="flagIcon" style={{ width: '20px', marginRight: '8px' }} />
+                En
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+
       <PiDotsNineBold className="icon menuIcon" onClick={shownavbar} />
     </div>
   );

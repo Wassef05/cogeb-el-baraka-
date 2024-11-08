@@ -1,0 +1,61 @@
+{
+    "helloText": "Al-Baraka : De notre trésor local, Nous offrons le meilleur",
+    "navbar": {
+      "home": "Acceuil",
+      "about": "À Propos",
+      "contact": "Contact"
+    },
+
+    
+        "newHelloText": {
+          "title": "Huilerie El Baraka",
+          "description": "Fondée sur un profond respect pour la nature, se consacre à une agriculture biologique innovante, abandonnant pesticides et engrais chimiques pour préserver la santé humaine et restaurer les saveurs authentiques des aliments. Récemment intégrée au commerce international, Huilerie El Baraka s'est spécialisée dans l'exportation d'huile d'olive biologique 'Extra Vierge', tirant parti de la richesse oléicole de la Tunisie, leader mondial en exportation d'huile d'olive biologique. L'huile d'olive, pilier du régime méditerranéen, est reconnue pour ses bienfaits contre les maladies cardiovasculaires et le cholestérol, à condition que sa pureté et sa composition biologique soient rigoureusement maintenues"
+        },
+
+        "whyCogebText": {
+            "title": "Opérations de Pressage des Olives",
+            "description": "Le pressage des olives consiste à sélectionner les meilleures olives, à les nettoyer, puis à les broyer pour en extraire l'huile. Cette méthode garantit une huile d'olive de haute qualité, conservant ses saveurs naturelles et ses bienfaits nutritionnels."
+          },
+          "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Un moyen facile de nous contacter",
+    "description": "Vous avez des difficultés à trouver la propriété de vos rêves pour votre domicile ? Vous avez besoin d'un guide pour acheter vos produits ? Contactez-nous simplement !",
+    "phoneLabel": "Téléphone",
+    "whatsappLabel": "WhatsApp",
+    "facebookLabel": "Support 24/7",
+    "callLabel": "Appelez-nous"},
+    "subscribe": {
+        "title": "Client EL-BARAKA",
+        "description": "Abonnez-vous et trouvez des offres de prix super attractives de notre part. Trouvez ce que vous désirez bientôt !",
+        "button": "S' Abonner"
+      },
+
+
+      "FormDialog": {
+        "email": "Adresse e-mail",
+        "name": "Nom & Prénom",
+        "message": "Message",
+        "submit": "Envoyer",
+        "success_title": "Succès!",
+        "success_text": "Formulaire soumis avec succès!",
+        "error_title": "Erreur!",
+        "error_text": "Erreur lors de l'envoi du formulaire.",
+        "fill_all_fields": "Veuillez remplir tous les champs."
+      },
+      "footer": {
+        "visionText": "Notre vision est de faire de votre choix le meilleur.",
+        "information": "Informations",
+        "usefulLinks": "Liens Utiles",
+        "devis": "Devis",
+        "support": "Support",
+        "confidentiality": "Confidentialité",
+        "contactDetails": "Détails de Contact"
+      },
+      "modals": {
+        "devis": "Nos devis sont calculés sur mesure pour répondre précisément à vos besoins spécifiques. Nous prenons en compte chaque détail de votre demande pour vous fournir une estimation juste et fiable. Avec nous, soyez certain d'obtenir un devis transparent et compétitif, adapté à votre budget et à vos exigences.",
+        "support": "Nous sommes là pour vous aider à faire les meilleurs choix de produits pour vos projets. Notre équipe d'experts est disponible pour vous fournir des conseils personnalisés, répondre à vos questions et vous guider dans vos décisions d'achat. Nous nous engageons à vous offrir le meilleur service possible pour assurer votre satisfaction complète.",
+        "confidentiality": "Nous prenons très au sérieux la sécurité de vos informations personnelles. Toutes les données que vous partagez avec nous sont traitées de manière confidentielle et sécurisée. Nous mettons en place des mesures de sécurité robustes pour protéger vos informations contre tout accès non autorisé, divulgation ou altération. Soyez assuré que vos données sont en de bonnes mains, et nous respectons strictement toutes les lois en matière de protection des données."
+      }
+  }
+  
+  

@@ -1,0 +1,56 @@
+{
+    "helloText": "Al-Baraka: From our local treasure, we offer the best",
+    "navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "newHelloText": {
+        "title": "Huilerie El Baraka",
+        "description": "Founded on a deep respect for nature, it is dedicated to innovative organic farming, abandoning pesticides and chemical fertilizers to preserve human health and restore the authentic flavors of food. Recently integrated into international trade, Huilerie El Baraka specializes in the export of 'Extra Virgin' organic olive oil, leveraging Tunisia's olive wealth, a world leader in the export of organic olive oil. Olive oil, a cornerstone of the Mediterranean diet, is recognized for its benefits against cardiovascular diseases and cholesterol, as long as its purity and organic composition are rigorously maintained."
+      },
+      "whyCogebText": {
+    "title": "Olive Pressing Operations",
+    "description": "Olive pressing involves selecting the best olives, cleaning them, and then crushing them to extract the oil. This method ensures high-quality olive oil that preserves its natural flavors and nutritional benefits."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "An easy way to contact us",
+    "description": "Having trouble finding the property of your dreams for your home? Need guidance in purchasing products? Simply contact us!",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "facebookLabel": "24/7 Support",
+    "callLabel": "Call Us"
+  },
+  "subscribe": {
+    "title": "Client EL-BARAKA",
+    "description": "Subscribe and find attractive price offers from us. Find what you desire soon!",
+    "button": "Subscribe"
+  },
+  "FormDialog": {
+    "email": "Email Address",
+    "name": "Name & Surname",
+    "message": "Message",
+    "submit": "Send",
+    "success_title": "Success!",
+    "success_text": "Form successfully submitted!",
+    "error_title": "Error!",
+    "error_text": "Error sending the form.",
+    "fill_all_fields": "Please fill in all fields."
+  },
+  "footer": {
+    "visionText": "Our vision is to make your choice the best one.",
+    "information": "Information",
+    "usefulLinks": "Useful Links",
+    "devis": "Estimate",
+    "support": "Support",
+    "confidentiality": "Confidentiality",
+    "contactDetails": "Contact Details"
+  },
+  "modals": {
+    "devis": "Our estimates are customized to precisely meet your specific needs. We take into account every detail of your request to provide you with a fair and reliable estimate. With us, you can be sure to get a transparent and competitive estimate, tailored to your budget and requirements.",
+    "support": "We are here to help you make the best product choices for your projects. Our team of experts is available to provide personalized advice, answer your questions, and guide you in your purchase decisions. We are committed to offering the best possible service to ensure your complete satisfaction.",
+    "confidentiality": "We take the security of your personal information very seriously. All data you share with us is treated confidentially and securely. We implement robust security measures to protect your information from unauthorized access, disclosure, or alteration. Rest assured that your data is in safe hands, and we strictly comply with all data protection laws."
+  }
+  }
+  

@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next"; // Import du hook useTranslation
 import "./NewHello.css";
-
-import {med} from "../../Assets"
+import { med } from "../../Assets";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const NewHelloThree = () => {
+  const { t } = useTranslation(); // Initialisation du hook pour traduire
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -17,13 +19,12 @@ const NewHelloThree = () => {
           <img src={med} alt="albaraka logo" className="new-image-style" />
         </div>
         <div className="new-text-div" data-aos="fade-up">
-         
           <p style={{ color: 'white' }}>
-           
-            <span style={{ fontWeight: 'bold', color: '#FFD700'}}> Huilerie El Baraka</span>:<br/>
-            Fondée sur un profond respect pour la nature, se consacre à une agriculture biologique innovante, abandonnant pesticides et engrais chimiques pour préserver la santé humaine et restaurer les saveurs authentiques des aliments. Récemment intégrée au commerce international, Huilerie El Baraka s'est spécialisée dans l'exportation d'huile d'olive biologique "Extra Vierge", tirant parti de la richesse oléicole de la Tunisie, leader mondial en exportation d'huile d'olive biologique. L'huile d'olive, pilier du régime méditerranéen, est reconnue pour ses bienfaits contre les maladies cardiovasculaires et le cholestérol, à condition que sa pureté et sa composition biologique soient rigoureusement maintenues
+            <span style={{ fontWeight: 'bold', color: '#FFD700' }}>
+              {t("newHelloText.title")}
+            </span>:<br />
+            {t("newHelloText.description")}
           </p>
-        
         </div>
       </div>
     </div>

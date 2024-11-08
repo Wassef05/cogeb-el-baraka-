@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next"; // Importation du hook de traduction
 import "./Hello.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Hello = () => {
+  const { t } = useTranslation(); // Initialisation du hook pour traduire
+  
+  // Utilisation du texte traduit à partir de la clé "helloText"
   const [text] = useTypewriter({
-    words: ["Al-Baraka : De notre trésor local , Nous offrons le meilleur"],
+    words: [t("helloText")], // Utilisation de la traduction ici
     loop: true,
     typeSpeed: 80,
     deleteSpeed: 1,
